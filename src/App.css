@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(170, 168, 168);
+}
+
+.spinnerCenter {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.headerMain {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
+.headerNavbarLogo a {
+  text-decoration: none;
+}
+
+.headerMain form {
+  width: 400px;
+}
+
+.headerNavbarLogo:hover {
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
+  color: #34656d;
+  font-style: 700px;
+}
+
+.navLinks {
+  color: hsl(210deg 8% 55%);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navLinks:hover {
+  color: hsl(210deg 8% 55%);
+}
+
+.customBtn {
+  background-color: #34656d;
+  border-color: #34656d;
+}
+
+.customBtn:hover {
+  background-color: #34656d;
+  border-color: #34656d;
+}
+
+.customBtn:focus {
+  background-color: #34656d;
+  border-color: #34656d;
+}
+
+.customBtnOutline {
+  color: #34656d !important;
+  border-color: #34656d !important;
+}
+
+.customBtnOutline:hover {
+  color: white !important;
+  background-color: #34656d !important;
+}
+
+.customBtnOutline:focus {
+  color: white !important;
+  background-color: #34656d !important;
+}
+
+.redColor {
+  color: crimson;
+}
+
+.featuresBody {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.featuresBody .form-control {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.filterDiv {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.blogsList {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pageTitleDiv {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper {
+  margin: 0 12rem;
+  padding: 0 2rem;
+}
+
+.paddingV1H0 {
+  padding: 1rem 0;
+}
+
+.pageTitleDiv {
+  font-family: "Kaushan Script", cursive;
+  color: #34656d;
+}
+
+.commentSectionTitle {
+  margin: 2rem 0 1rem 0;
+  font-family: "Kaushan Script", cursive;
+  color: #34656d;
+}
+.miniText {
+  font-size: 0.8rem;
+  color: rgb(129, 129, 129);
+}
+
+.commentBodyTimePara {
+  font-size: 0.9rem;
+  color: rgb(129, 129, 129);
+}
+
+.commentBodyText {
+  margin-bottom: 0.5rem;
+}
+
+.commentBody {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.cardBody img {
+  width: 286px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.linkEntity {
+  text-decoration: none;
+}
+
+.hoverPointer {
+  cursor: pointer;
+}
+
+.profileMiddleListItem .active {
+  color: white;
+  background-color: #34656d;
+}
+
+.profileMiddleListItem .active:hover {
+  color: white;
+  background-color: #34656d;
+  cursor: inherit;
+}
+
+.readBlogBody {
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.readBlogTitle {
+  font-size: 2.5rem;
+  color: #34656d;
+  margin: 0;
+}
+
+.readBlogTitleDiv {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  align-items: flex-start;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.commentHeading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
+
+.blogActions {
+  font-size: 2rem;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  top: 5px;
+}
+
+.customUiBold {
+  color: #34656d;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.readBlogImg {
+  width: 100%;
+  max-height: 600px;
+}
+
+.readBlogDetailsPara {
+  display: flex;
+  justify-content: space-between;
+}
+
+.readBlogCategories {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.readBlogCategoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.readBlogCategoriesListItem {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #34656d;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.readBlogCategoriesListItem:hover {
+  cursor: pointer;
+  background-color: #4195a1;
+}
+
+.readBlogBodyDiv {
+  padding: 2rem 1rem 0 1rem;
+}
+
+.readBlogBodyDivText {
+  white-space: pre-wrap;
+  color: rgba(0, 0, 0, 0.685);
+  font-size: 1.25rem;
+  letter-spacing: 0.0075em;
+  margin: 0;
+}
+
+.updateAction:hover {
+  cursor: pointer;
+  color: rgb(62, 176, 230);
+}
+
+.deleteAction:hover {
+  cursor: pointer;
+  color: crimson;
+}
+
+.commentsListDiv {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  /* box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%); */
+}
+
+.commentTitlePara {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.commentTitlePara .deleteAction {
+  font-size: 1.3rem;
+}
+.commentUsername {
+  font-size: 1.2rem;
+}
+
+.login {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.loginBody {
+  width: 360px;
+}
+
+.loginBodyTop {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.loginBodyTop button {
+  width: 100%;
+}
+
+.loginLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.loginBodyBottom {
+  padding: 1rem 2rem;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.loginBodyBottom p {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.errorAlert {
+  text-align: center;
+}
+
+.register {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profileWrapper {
+  padding: 1rem 15rem;
+}
+
+.profileImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileTop {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.5fr;
+}
+
+.profileTop button {
+  margin-left: 1rem;
+}
+
+.profileTopLeft {
+  padding: 1rem;
+}
+.profileTopRight {
+  text-align: center;
+  padding: 1rem;
+}
+
+.profileUsername {
+  font-size: 2rem;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.profileTopRightMiddle {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.profileTopRightTop {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profileTopRightBottom {
+  text-align: left;
+}
+
+.profileTopRightBottom p {
+  margin: 0;
+}
+
+.profilebio {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.profileMiddle {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.profileMiddleList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.profileMiddleListItemBtn {
+  padding: 0.2rem 2rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+}
+
+.profileMiddleListItemBtn:hover {
+  background-color: #bbbbbb;
+}
+
+.profileBottom {
+  padding: 0.5rem 1rem;
+}
+
+.profileTopRightMiddleData {
+  font-weight: 700;
+}
+
+.profileTopRightMiddle a {
+  text-decoration: none;
+  color: black;
+}
+
+.proPic {
+  width: 21px;
+  height: 19px;
+  object-fit: contain;
+  position: relative;
+  top: -2px;
+}
+
+.uiBold {
+  font-weight: 500;
+  margin-right: 2px;
+  color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+  .profileWrapper {
+    padding: 1rem 6rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .profileWrapper {
+    padding: 1rem;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0 2rem;
+  }
+
+  .readBlogDetailsPara {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .featuresBody {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .blogsList {
+    justify-content: center;
+  }
+
+  .navLinks {
+    text-align: center;
+  }
+
+  .searchBoxDiv form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profileTop {
+    grid-template-columns: 1fr;
+  }
+
+  .profileTop button {
+    margin: 0;
+  }
+
+  .profileMiddleList {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .profileTopRightTop {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 596px) {
+  .login {
+    padding: 4rem 0;
+  }
+  .commentForm {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .register {
+    padding: 4rem 0;
+  }
+  .featuresBody {
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  .cardBody img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .profileImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}

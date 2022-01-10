@@ -44,7 +44,7 @@ export default function Comment({ comment, comments, setComments }) {
                     {comment?.commentBy?.userName}
                 </span>
                 {
-                    comment?.commentBy?._id === user._id &&
+                    comment?.commentBy?._id === user?._id &&
                     <span className="deleteAction" onClick={handleDeleteCommentShow}>
                         <AiFillDelete />
                     </span>

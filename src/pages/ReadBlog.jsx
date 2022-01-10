@@ -103,7 +103,7 @@ export default function ReadBlog() {
                             {blog?.title}
                         </p>
                         {
-                            blog?.blogBy?._id === user._id &&
+                            blog?.blogBy?._id === user?._id &&
                             <p className="blogActions">
                                 <span className="updateAction" onClick={() => redirectToBlogUpdate(blog?._id)}>
                                     <FaRegEdit />

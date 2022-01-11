@@ -10,9 +10,17 @@ export default function Features() {
     const location = useLocation();
     const history = useHistory();
 
-    const [searchText, setSearchText] = useState((new URLSearchParams(location.search)).get("keyword") || "");
+    const [searchText, setSearchText] = useState("");
 
-    const [filter, setFilter] = useState((new URLSearchParams(location.search)).get("category") || "");
+    const [filter, setFilter] = useState("");
+
+    useEffect(() => {
+
+        setSearchText((new URLSearchParams(location.search)).get("keyword") || "");
+
+        setFilter((new URLSearchParams(location.search)).get("category") || "");
+
+    }, [location.search]);
 
     const handleFilterChange = ({ target: { value } }) => {
         setFilter(value);

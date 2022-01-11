@@ -1,6 +1,6 @@
 # Blogit (MERN)
 
-<p>A responsive blog app with all CRUD operations for users, blogs, and comments including important features suc as searching, filtering, and tags for an amazing blogging experience</p>
+<p>A responsive blog app with all CRUD operations for users, blogs, and comments including important features such as searching, filtering, and tags for an amazing blogging experience</p>
 
 - Authentication using JWT
 - Built using React, React-Bootstrap, Node, Express, and MongoDB
